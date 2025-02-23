@@ -9,7 +9,7 @@ export default function AgeCalculator() {
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
-        const numericValue = Number(value); // Convert string to number
+        const numericValue = Number(value);
 
 
         setBirthYear(numericValue);
@@ -22,6 +22,7 @@ export default function AgeCalculator() {
 
     return (
         <div>
+            <h3>Age calculator</h3>
             <label>
                 Zadej rok narození:
                 <input type="number" value={birthYear} onChange={handleChange} />
